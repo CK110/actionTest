@@ -1,4 +1,4 @@
-name: CI
+name: send-mail
 on:
   push:
     branches: [ "master" ]
