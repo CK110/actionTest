@@ -6,6 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout codes
+        uses: actions/checkout@v3
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
@@ -17,4 +19,4 @@ jobs:
           to: chenkaic4233@gmail.com,747272975@qq.com
           from: Github Action
           body: ${{github.repository}} has change!
-          attachments: ./README.md
+          attachments: README.md
