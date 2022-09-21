@@ -14,7 +14,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: Whispers postman change
-          to: chenkaic4233@gmail.com
+          to: chenkaic4233@gmail.com,747272975@qq.com
           from: Github Action
           body: ${{github.repository}} has change!
-          attachments: git.diff,README.md
+          attachments: ./README.md
