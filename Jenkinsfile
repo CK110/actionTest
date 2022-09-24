@@ -10,4 +10,9 @@ pipeline {
             }
         }
     }
+    post{
+        always{
+            sendEmail('chenkaic4233@gmail.com')
+        }
+    }
 }
